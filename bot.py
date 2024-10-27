@@ -27,7 +27,6 @@ def main(message):
         bot.reply_to(message, 'Ваш пароль: ' + password)
     if text == '/commands':
         bot.reply_to(message, 'Команды: /autor, /coin, /number, /password')
-    if text == '/photo':
-        bot.send_photo(message, "ava.png")
+
     
 bot.infinity_polling()
