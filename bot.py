@@ -5,7 +5,7 @@ coin = ['Орел', 'Решка']
 numbers = '123456789'
 symbols = '123456789qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM@#$%&'
 
-bot = telebot.TeleBot('7729013334:AAH_5fN21xofShRhlzu7GiqR-PF-TiAbVXE', parse_mode='HTML')
+bot = telebot.TeleBot('{TOKEN}', parse_mode='HTML')
 @bot.message_handler(commands=['start', 'privet'])
 def start(message: Message):
     bot.reply_to(message, 'Привет!')
